@@ -2,8 +2,8 @@
 // src/api.js
 import axios from 'axios';
 
-// const API = axios.create({ baseURL: 'http://localhost:5000/api' });
-const API = axios.create({ baseURL: 'https://takify-server.vercel.app' });
+const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+// const API = axios.create({ baseURL: 'https://takify-server-bdrzw84ky-sanket-dorles-projects.vercel.app/' });
 
 API.interceptors.request.use(config => {
   const user = JSON.parse(localStorage.getItem('user'));
